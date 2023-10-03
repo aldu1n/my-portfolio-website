@@ -1,9 +1,14 @@
+:root {
+    --blue: #102d51;
+    --white: #ffffff;
+}
+
 body {
     background-color: #e7e3d2;
 }
 
 header {
-    background-color: #102d51;
+    background-color: var(--blue);
     height: 80px;
     width: 100%;
 }
@@ -12,7 +17,7 @@ h1 {
     float: left;
     font-size: 3rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #ffffff;
+    color: var(--white);
     text-shadow: 5px 5px 5px black;
     padding: 10px 0 0 10px;
 }
@@ -24,22 +29,42 @@ ul {
 li {
     display: inline-block;
     font-size: 1.5rem;
-    background-color: #102d51;
-    padding: 26px 5px 30px 0;
+    background-color: var(--blue);
+    padding: 26px 10px 30px 10px;
     margin-right: 0;
     margin-left: 0;
 }
 
 li:hover {
-    background-color: #ffffff;
+    background-color: var(--white);
 }
 
 a {
-    color: #ffffff;
+    color: var(--white);
     text-decoration: none;
-    /* text-shadow: 5px 5px 5px black ; */
 }
 
-a:hover, a:focus {
-    color: #102d51 ;
+li:hover a, li:focus a {
+    color: var(--blue); 
+}
+
+#hero-container {
+    position: relative;
+    display: block;
+}
+
+#hero {
+    display: inline-block;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#hero-text {
+    position: absolute;
+    top: 70%; 
+    left: 59%;
+    color: var(--white);
+    font-size: 40px; 
+    font-family: cursive;
 }

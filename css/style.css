@@ -12,34 +12,36 @@ body {
 }
 
 header {
+    /* display: flex; */
     background-color: var(--blue);
-    height: 80px;
+    height: 100px;
     width: 100%;
 }
 
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
 h1 {
-    float: left;
+    padding-top: 25px;
+    flex-wrap: wrap;
     font-size: 3rem;
     color: var(--white);
     text-shadow: 5px 5px 5px black;
-    padding: 10px 0 0 10px;
 }
 
-.nav-bar {
-    float: right;
+.nav-links {
+    display: flex;
 }
+
 
 li {
-    display: inline-block;
+    flex-wrap: wrap;
+    flex-direction: row;
     font-size: 1.5rem;
     background-color: var(--blue);
-    padding: 26px 10px 30px 10px;
-    margin-right: 0;
-    margin-left: 0;
-}
-
-li:hover {
-    background-color: var(--white);
+    padding: 35px 20px;
 }
 
 a {
@@ -47,17 +49,18 @@ a {
     text-decoration: none;
 }
 
-li:hover a, li:focus a {
-    color: var(--blue); 
+a:hover {
+    color: #000000; 
 }
 
 #hero-container {
     position: relative;
-    display: block;
+    display: flex;
 }
 
 #hero {
-    display: inline-block;
+    flex-wrap: wrap;
+    /* display: inline-block; */
     height: 200px;
     width: 100%;
     object-fit: cover;

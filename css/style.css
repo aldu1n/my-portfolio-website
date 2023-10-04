@@ -1,6 +1,7 @@
 :root {
     --blue: #102d51;
     --white: #ffffff;
+    --orange: #FF7F50;
 }
 
 * {
@@ -27,6 +28,10 @@ header {
     text-shadow: 5px 5px 5px black;
 }
 
+#nav-title:hover {
+    color: var(--orange)
+}
+
 .nav-links {
     display: inline-block;
     padding: 10px 5px;
@@ -41,7 +46,7 @@ header {
 
 .nav-links a:hover,
 .foot-links a:hover {
-    color: #FF7F50;
+    color: var(--orange);
 }
 
 .nav-links a:visited,
@@ -74,7 +79,7 @@ header {
     margin-bottom: 20px;
     padding: 10px;
     border-bottom: 10px double #FF7F50;
-    color: #FF7F50;
+    color: var(--orange);
 }
 
 #about-me p {
@@ -86,7 +91,7 @@ header {
 
 span {
     font-size: 2.5rem;
-    color: #FF7F50;
+    color: var(--orange);
 }
 
 .project-section {
@@ -120,13 +125,13 @@ section {
   }
 
   a p:hover {
-    color: #FF7F50;
+    color: var(--orange);
   }
 
   .project-section a {
     position: relative;
     text-align: center;
-    color: white;
+    color: var(--white);
   }
 
   .project-section p {
@@ -134,7 +139,7 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #102d51;
+    background-color: var(--blue);
     padding: 20px 60px;
     border-radius: 50px;
   }
@@ -171,12 +176,18 @@ section {
   .full-width {
         width: 100%;
     }
-  }
-
-  @media screen and (max-width: 768px) {
-
-
-  }
-
-  @media screen and (max-width: 576px) {
+    header, 
+    footer {
+        background-color: var(--orange);
+    }
+    #contact-me h2 {
+        color: var(--blue);
+    }
+    .nav-links a:hover,
+    .foot-links a:hover {
+    color: var(--blue);
+}
+    #nav-title:hover {
+        color: var(--blue)
+    }
   }

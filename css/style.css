@@ -26,12 +26,7 @@ header {
     text-shadow: 5px 5px 5px black;
 }
 
-.nav-bar {
-    flex-direction: row;
-}
-
 .nav-links {
-    flex-direction: row;
     display: inline-block;
     padding: 10px 5px;
     text-decoration: none;
@@ -60,42 +55,36 @@ header {
     object-fit: cover;
 }
 
-#about-me, #projects {
+#about-me {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
 }
 
- h2 {
+ #about-me h2, #projects h2 {
     text-align: center;
-    font-size: 2.5rem;
-    display: inline-block;
-    margin-top: 6%;
-    margin-left: 2%;
+    font-size: 2rem;
+    margin-top: 2%;
+    padding-bottom: 20px;
+    border-bottom: 10px double #FF7F50;
     color: #FF7F50;
 }
 
 #about-me p {
     color: var(--blue);
-    text-align: center;
-    display: inline-block;
-    max-width: 80%;
-    margin-top: 40px;
-    padding: 30px 10px;
-    border-left: 5px solid #FF7F50;
+    max-width: 50%;
+    margin: 0 auto;
+    padding-top: 50px;
 }
 
 #projects {
-    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    margin-top: 50px;
 }
-
-#refactoring-seo {
-    max-height: 400px;
-    max-width: 100%;
-    border-left: 5px solid var(--blue);
-    padding-left: 30px;
-}
-
 /* #hero-text {
     font-size: 3rem;
     font-family: cursive;

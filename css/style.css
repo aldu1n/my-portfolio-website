@@ -21,6 +21,7 @@ header {
 }
 
 #nav-title {
+    padding-left: 5px;
     font-size: 3rem;
     color: var(--white);
     text-shadow: 5px 5px 5px black;
@@ -33,15 +34,18 @@ header {
     flex: 1;
 }
 
-.nav-links a {
+.nav-links a, 
+.foot-links a {
     color: var(--white);
 }
 
-.nav-links a:hover  {
+.nav-links a:hover,
+.foot-links a:hover {
     color: #FF7F50;
 }
 
-.nav-links a:visited {
+.nav-links a:visited,
+.foot-links a:visited {
     color: none;
 }
 
@@ -62,7 +66,8 @@ header {
     justify-content: center;
 }
 
- #about-me h2, #projects h2 {
+ #about-me h2, 
+ #projects h2 {
     text-align: center;
     font-size: 2rem;
     margin-top: 2%;
@@ -77,6 +82,11 @@ header {
     max-width: 50%;
     margin: 0 auto;
     padding-top: 50px;
+}
+
+span {
+    font-size: 2.5rem;
+    color: #FF7F50;
 }
 
 .project-section {
@@ -129,10 +139,43 @@ section {
     border-radius: 50px;
   }
 
-  @media screen and (max-width: 992px) {
+  #contact-me ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+  }
+
+  footer {
+    background-color: var(--blue);
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+  }
+
+  #contact-me h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2%;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #FF7F50;
+  }
+
+  .foot-links {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 1073px) {
+  .full-width {
+        width: 100%;
+    }
   }
 
   @media screen and (max-width: 768px) {
+
+
   }
 
   @media screen and (max-width: 576px) {

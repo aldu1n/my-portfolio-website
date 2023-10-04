@@ -66,7 +66,6 @@ header {
     text-align: center;
     font-size: 2rem;
     margin-top: 2%;
-    padding: 0 350px 20px 350px;
     border-bottom: 10px double #FF7F50;
     color: #FF7F50;
 }
@@ -78,28 +77,37 @@ header {
     padding-top: 50px;
 }
 
-#projects {
+.project-cont {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    justify-content:first baseline;
     margin-top: 50px;
 }
 
-.image {
-     /* Set your desired height */
-  }
+div {
+    gap:10px;
+}
   
-  .full-width {
-    flex: 1 ;
-    width: 100%;
-  }
-  
-  .half-width {
-    flex: 1;
-    width: 50%;
+.full-width {
     height: 300px;
+    width: 70vw;
+    object-fit: cover;
+    border-radius: 20px;
+    filter: blur(10px);
+  }
+  
+.half-width {
+    width: 48%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    filter: blur(10px);
+  }
+
+  .full-width:hover, .half-width:hover {
+    filter:blur(0);
   }
 
 /* #hero-text {

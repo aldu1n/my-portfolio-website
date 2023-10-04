@@ -15,6 +15,10 @@ N/A
 
 Open 'index.html' in any browser, or follow this Git Pages link: [My Portfolio Website](https://aldu1n.github.io/my-portfolio-website/).
 
+## Screenshot
+
+![Screenshot of website](images/Screenshot.png)
+
 ## Credits
 
 N/A

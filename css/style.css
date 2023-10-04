@@ -66,6 +66,8 @@ header {
     text-align: center;
     font-size: 2rem;
     margin-top: 2%;
+    margin-bottom: 20px;
+    padding: 10px;
     border-bottom: 10px double #FF7F50;
     color: #FF7F50;
 }
@@ -77,16 +79,15 @@ header {
     padding-top: 50px;
 }
 
-.project-cont {
+.project-section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
 }
 
-div {
+section {
     gap:10px;
 }
   
@@ -95,30 +96,38 @@ div {
     width: 70vw;
     object-fit: cover;
     border-radius: 20px;
-    filter: blur(10px);
   }
   
 .half-width {
-    width: 48%;
+    width: 100%;
     height: 300px;
     object-fit: cover;
     border-radius: 20px;
-    filter: blur(10px);
   }
 
-  .full-width:hover, .half-width:hover {
-    filter:blur(0);
+  a:hover img {
+    box-shadow: 0 0 10px black;
   }
 
-/* #hero-text {
-    font-size: 3rem;
-    font-family: cursive;
-    text-align: right;
-    position: absolute;
-    top: 30%;
-    left: 45%;
+  a p:hover {
+    color: #FF7F50;
+  }
+
+  .project-section a {
+    position: relative;
+    text-align: center;
     color: white;
-  } */
+  }
+
+  .project-section p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #102d51;
+    padding: 20px 60px;
+    border-radius: 50px;
+  }
 
   @media screen and (max-width: 992px) {
   }

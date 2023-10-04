@@ -58,13 +58,15 @@ header {
 #about-me {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
  #about-me h2, #projects h2 {
     text-align: center;
     font-size: 2rem;
     margin-top: 2%;
-    padding-bottom: 20px;
+    padding: 0 350px 20px 350px;
     border-bottom: 10px double #FF7F50;
     color: #FF7F50;
 }
@@ -80,11 +82,26 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    max-width: 1400px;
+    justify-content:first baseline;
     margin-top: 50px;
 }
+
+.image {
+     /* Set your desired height */
+  }
+  
+  .full-width {
+    flex: 1 ;
+    width: 100%;
+  }
+  
+  .half-width {
+    flex: 1;
+    width: 50%;
+    height: 300px;
+  }
+
 /* #hero-text {
     font-size: 3rem;
     font-family: cursive;
